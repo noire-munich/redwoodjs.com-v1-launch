@@ -1,0 +1,23 @@
+@import "src/index";
+
+section {
+  @apply p-4;
+}
+
+section:first-child {
+  background-color: $color_accent2;
+
+  .project {
+    background-color: $color_bg;
+  }
+}
+
+section h2 {
+  width: 100%;
+  color: $color_accent;
+}
+
+section > .content {
+  @apply flex flex-col items-stretch;
+  @apply flex md:flex-row md:items-start ;
+}
