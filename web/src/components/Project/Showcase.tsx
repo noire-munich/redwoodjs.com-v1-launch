@@ -16,7 +16,7 @@ const Showcase: React.FC<ShowcaseProps> = ({
   <article className="project showcase">
     <header>
       <h1>{title}</h1>
-      <img alt={'Example app'} {...imgProps} />
+      {imgProps && <img alt={'Example app'} {...imgProps} />}
     </header>
     <div className="content">
       <p>{description}</p>
