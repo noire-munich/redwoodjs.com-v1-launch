@@ -1,20 +1,39 @@
 import { Link, routes } from '@redwoodjs/router'
 import { MetaTags } from '@redwoodjs/web'
+import Community from 'src/components/Project/Community'
 
 const ShowcasePage = () => {
   return (
-    <>
+    <main>
       <MetaTags title="Showcase" description="Showcase page" />
 
-      <h1>ShowcasePage</h1>
-      <p>
-        Find me in <code>./web/src/pages/ShowcasePage/ShowcasePage.js</code>
-      </p>
-      <p>
-        My default route is named <code>showcase</code>, link to me with `
-        <Link to={routes.showcase()}>Showcase</Link>`
-      </p>
-    </>
+      <section>
+        <article className="project">
+          <header>
+            <h1>Music Collection</h1>
+            <img src={''} alt={'Music Collection example app'} />
+          </header>
+          <div className="content">
+            <p></p>
+          </div>
+        </article>
+      </section>
+      <section className={'community'}>
+        <h2>Community</h2>
+        <Community
+          title={'Community example'}
+          description={`This example showcases some community dedication.`}
+        />
+        <Community
+          title={'Community example'}
+          description={`This example showcases some community dedication.`}
+        />
+        <Community
+          title={'Community example'}
+          description={`This example showcases some community dedication.`}
+        />
+      </section>
+    </main>
   )
 }
 

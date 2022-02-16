@@ -1,0 +1,16 @@
+body {
+  background-color: #FDF8F5;
+}
+
+a {
+  color: #BF4722
+}
+
+p, span {
+  color: #1A202C
+}
+
+main {
+  @apply m-0;
+  @apply lg:m-2;
+}
